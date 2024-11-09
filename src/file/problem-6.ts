@@ -19,4 +19,4 @@ function updateProfile (obj:partialProfile,val:partialProfile ):{}{
     return  obj;
 }
 
-console.log(updateProfile(myProfile, {age:60}));
+console.log(updateProfile(myProfile, {age:50}));

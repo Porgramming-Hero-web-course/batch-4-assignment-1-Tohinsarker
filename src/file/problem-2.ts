@@ -16,3 +16,4 @@ function removeDuplicates(numbers:number[]):number[]{
 }
 
 removeDuplicates([1,2,3,4,5,4,3,21,0,56])
+console.log(    removeDuplicates([1,2,3,4,5,4,3,21,0,56])                  )

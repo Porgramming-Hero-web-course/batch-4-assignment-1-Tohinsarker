@@ -1,19 +1,30 @@
-function calculateShapeArea(
-  shape: string,
-  input1: number,
-  input2?: number,
-  input3?: number
-) {
-  let result;
-  if (shape == "rectangle") {
-  }
-  if (input3 !== undefined && input2 !== undefined && shape === "rectangle") {
-    return (result = input1 * input2);
-  }else if(shape==='circle'){
-   return result= Math.PI * (input1**2)
-  }
-
-  
+interface Circle {
+  shape: string;
+  radius: number;
+}
+interface Rectangle {
+  shape: string;
+  height: number;
+  width: number;
 }
 
-console.log(calculateShapeArea("circle", 5));
+function calculateShapeArea(
+  shape: string,
+  radiusOrWith: number,
+  height?: number
+): number | string {
+  console.log("circle", height);
+  if (shape === "circle") {
+    const result = Math.PI * radiusOrWith ** 2;
+    const toFixed = result.toFixed(2);
+    return parseFloat(toFixed);
+  } else if (shape === "rectangle" && height !== undefined) {
+    const result = radiusOrWith * height;
+    const toFixed = result.toFixed(2);
+    return parseFloat(toFixed);
+  } else {
+    return "wrong input";
+  }
+}
+
+console.log(calculateShapeArea("rectangle", 5, 5));

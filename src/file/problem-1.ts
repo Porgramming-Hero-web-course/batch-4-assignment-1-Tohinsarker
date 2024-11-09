@@ -1,5 +1,5 @@
 
-function sumArray(numbers:number[]):number{
+function sumArray (numbers:number[]):number{
  
     const result = numbers.reduce((totalValue,currentV)=>totalValue+currentV,0)
 
@@ -11,4 +11,4 @@ function sumArray(numbers:number[]):number{
     
     
   sumArray([1, 2, 3, 4, 5]);
-  
+ 

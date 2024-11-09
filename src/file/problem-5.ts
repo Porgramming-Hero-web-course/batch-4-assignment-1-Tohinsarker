@@ -1,4 +1,4 @@
-function getProperty<T,V extends keyof T>(obj:T, key:V):T[V]{
+function getProperty<obj,property extends keyof obj>(obj:obj, key:property):obj[property]{
     return obj[key];
 }
 
