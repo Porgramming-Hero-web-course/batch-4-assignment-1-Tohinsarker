@@ -78,7 +78,7 @@ function interactWithAnimal(parent: Parent) {
 }
 
 const sons = new maleChild();
-interactWithAnimal(sons); // output : 'hi i am m' 
+interactWithAnimal(sons); // output : 'hi i am m';
 
 
 
